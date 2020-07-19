@@ -49,7 +49,8 @@ type Project struct {
 	Fields []typeField
 }
 
-func (p Project) isValid() bool {
+// IsValid bla bla bla
+func (p Project) IsValid() bool {
 	return len(p.Name) > 4 && p.fieldsAreValid()
 }
 
