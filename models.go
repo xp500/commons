@@ -8,6 +8,10 @@ type Organization struct {
 	ID   string
 }
 
+func (o Organization) isValid() bool {
+	return len(o.Name) > 4
+}
+
 const (
 	typeText  = iota
 	typeInt   = iota
