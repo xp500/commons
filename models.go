@@ -1,5 +1,7 @@
 package commons
 
+import "cloud.google.com/go/firestore"
+
 /*
 Organization bla bla bla
 */
@@ -84,6 +86,7 @@ type Credential struct {
 
 // User bla bla bla
 type User struct {
-	Email string
-	ID    string
+	Email       string
+	ID          string
+	Credentials []*firestore.DocumentRef
 }
