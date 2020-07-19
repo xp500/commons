@@ -8,7 +8,8 @@ type Organization struct {
 	ID   string
 }
 
-func (o Organization) isValid() bool {
+// IsValid bla bla bla
+func (o Organization) IsValid() bool {
 	return len(o.Name) > 4
 }
 
